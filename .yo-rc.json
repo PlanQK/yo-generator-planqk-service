@@ -1,0 +1,9 @@
+{
+    "generator-node": {
+        "promptValues": {
+            "authorName": "Michael Falkenthal",
+            "authorEmail": "michael.falkenthal@stoneone.de",
+            "authorUrl": ""
+        }
+    }
+}
