@@ -1,36 +1,38 @@
-# generator-planqk-service [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> Generator for scuffolding PlanQK services
+# generator-planqk-service
+
+> Generator for scaffolding new PlanQK services
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-planqk-service using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io) and generator-planqk-service using [npm](https://www.npmjs.com) (we assume you
+have pre-installed [node.js](https://nodejs.org)).
 
 ```bash
 npm install -g yo
 npm install -g generator-planqk-service
 ```
 
-Then generate your new project:
+Then generate your new PlanQK service:
 
 ```bash
-yo planqk-service
+yo planqk-service <name>
 ```
 
-## Getting To Know Yeoman
+## Development
 
- * Yeoman has a heart of gold.
- * Yeoman is a person with feelings and opinions, but is very easy to work with.
- * Yeoman can be too opinionated at times but is easily convinced not to be.
- * Feel free to [learn more about Yeoman](http://yeoman.io/).
+Clone the repository and install its dependencies:
+
+```bash
+git clone https://github.com/PlanQK/yo-generator-planqk-service
+cd yo-generator-planqk-service 
+npm install
+```
+
+By using `npm link`, a global npm module is created and symlinked to you local copy. Afterwards, you'll be able to
+call `yo planqk-service` to test your changes.
+
+To revert the link operation, use `npm unlink`.
 
 ## License
 
-Apache-2.0 © [Michael Falkenthal]()
-
-
-[npm-image]: https://badge.fury.io/js/generator-planqk-service.svg
-[npm-url]: https://npmjs.org/package/generator-planqk-service
-[travis-image]: https://travis-ci.com//generator-planqk-service.svg?branch=master
-[travis-url]: https://travis-ci.com//generator-planqk-service
-[daviddm-image]: https://david-dm.org//generator-planqk-service.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org//generator-planqk-service
+Apache-2.0 | Copyright 2021-2022 StoneOne AG
