@@ -1,4 +1,4 @@
-name: npm publish
+name: pipeline
 
 on: push
 
@@ -12,7 +12,6 @@ jobs:
           node-version: 16
       - run: npm ci
       - run: npm test
-
   publish-npm:
     needs: build
     runs-on: ubuntu-latest

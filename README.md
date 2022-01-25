@@ -1,5 +1,8 @@
 # generator-planqk-service
 
+[![](https://badge.fury.io/js/@stoneone%2Fgenerator-planqk-service.svg)](https://badge.fury.io/js/@stoneone%2Fgenerator-planqk-service)
+[![](https://github.com/PlanQK/yo-generator-planqk-service/actions/workflows/pipeline.yml/badge.svg)](https://github.com/PlanQK/yo-generator-planqk-service/actions/workflows/pipeline.yml)
+
 > Generator for scaffolding new PlanQK services
 
 ## Installation
