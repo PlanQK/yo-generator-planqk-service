@@ -24,6 +24,9 @@ jobs:
       - run: npm install -g semantic-release @semantic-release/github @semantic-release/git
       - run: npm ci
       - uses: cycjimmy/semantic-release-action@v2
+        with:
+          extra_plugins: |
+            @semantic-release/git
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
