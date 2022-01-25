@@ -21,6 +21,7 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org
+      - run: npm install -g semantic-release @semantic-release/github @semantic-release/git
       - run: npm ci
       - uses: cycjimmy/semantic-release-action@v2
         env:
