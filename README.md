@@ -18,7 +18,7 @@ npm install -g @stoneone/generator-planqk-service
 Then generate your new PlanQK service:
 
 ```bash
-yo planqk-service <name>
+yo @stoneone/planqk-service <name>
 ```
 
 ## Development
