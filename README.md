@@ -9,7 +9,7 @@ have pre-installed [node.js](https://nodejs.org)).
 
 ```bash
 npm install -g yo
-npm install -g generator-planqk-service
+npm install -g @stoneone/generator-planqk-service
 ```
 
 Then generate your new PlanQK service:
