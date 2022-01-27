@@ -50,7 +50,7 @@ module.exports = class extends Generator {
       message: 'Tell me which version of the template files you want to use:',
       default: 'latest',
       choices: [
-        { name: 'v1.9.1', value: 'v1.9.1', short: '1.9.1' },
+        { name: 'v1.9.2', value: 'v1.9.2', short: '1.9.2' },
         { name: 'latest', value: 'latest', short: 'latest' },
       ],
       store: true,
