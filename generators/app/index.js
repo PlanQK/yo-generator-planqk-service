@@ -21,6 +21,8 @@ const chalk = require('chalk');
 const yosay = require('yosay');
 const helper = require('./helper');
 
+const RELEASED_VERSION = '1.10.0';
+
 module.exports = class extends Generator {
   constructor(args, opts) {
     super(args, opts);
@@ -50,7 +52,7 @@ module.exports = class extends Generator {
       message: 'Tell me which version of the template files you want to use:',
       default: 'latest',
       choices: [
-        { name: 'v1.9.6', value: 'v1.9.6', short: '1.9.6' },
+        { name: `v${RELEASED_VERSION}`, value: `v${RELEASED_VERSION}`, short: `v${RELEASED_VERSION}` },
         { name: 'latest', value: 'latest', short: 'latest' },
       ],
       store: true,
