@@ -28,9 +28,9 @@ module.exports.downloadTemplate = async (version, yo) => {
       },
       responseType: 'arraybuffer',
     };
-    yo.log(`• ${chalk.green('Download')} PlanQK Service template`);
+    yo.log(`• ${chalk.green('Download')} PlanQK Service template archive`);
     const t = await axios.get(`https://storage.googleapis.com/yeoman-templates/${version}/template.zip`, config);
-    yo.log(`• ${chalk.green('Extract')} archive to ${yo.options.name}/service-template`);
+    yo.log(`• ${chalk.green('Extract')} archive to '${yo.options.name}' directory`);
     new AdmZip(t.data, {}).extractAllTo(yo.destinationPath(yo.options.name), false);
   } catch (err) {
     yo.log.error(`Error fetching the template: ${chalk.red(err.message)}`);
