@@ -40,7 +40,7 @@ module.exports = class extends Generator {
 
   async prompting() {
     this.props = {
-      version: 'latest',
+      version: RELEASED_VERSION,
       initGit: true,
     };
     // Have Yeoman greet the user.
@@ -53,7 +53,7 @@ module.exports = class extends Generator {
       default: 'latest',
       choices: [
         { name: `${RELEASED_VERSION}`, value: `${RELEASED_VERSION}`, short: `${RELEASED_VERSION}` },
-        { name: 'latest', value: 'latest', short: 'latest' },
+        { name: 'next', value: 'next', short: 'next' },
       ],
       store: true,
     };
