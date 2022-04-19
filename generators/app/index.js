@@ -21,7 +21,7 @@ const chalk = require('chalk');
 const yosay = require('yosay');
 const helper = require('./helper');
 
-const RELEASED_VERSION = 'v1.12.4';
+const RELEASED_VERSION = 'v1.22.0';
 
 module.exports = class extends Generator {
   constructor(args, opts) {
@@ -53,7 +53,7 @@ module.exports = class extends Generator {
       default: 'latest',
       choices: [
         { name: `${RELEASED_VERSION}`, value: `${RELEASED_VERSION}`, short: `${RELEASED_VERSION}` },
-        { name: 'next', value: 'next', short: 'next' },
+        { name: 'latest', value: 'latest', short: 'latest' },
       ],
       store: true,
     };
