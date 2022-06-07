@@ -21,7 +21,7 @@ const chalk = require('chalk');
 const yosay = require('yosay');
 const helper = require('./helper');
 
-const RELEASED_VERSION = 'v1.25.5';
+const RELEASED_VERSION = 'v1.25.6';
 
 module.exports = class extends Generator {
   constructor(args, opts) {
