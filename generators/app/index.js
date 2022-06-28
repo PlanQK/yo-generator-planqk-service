@@ -21,8 +21,6 @@ const chalk = require('chalk');
 const yosay = require('yosay');
 const helper = require('./helper');
 
-const RELEASED_VERSION = 'v1.26.2';
-
 module.exports = class extends Generator {
   constructor(args, opts) {
     super(args, opts);
@@ -40,7 +38,7 @@ module.exports = class extends Generator {
 
   async prompting() {
     this.props = {
-      version: RELEASED_VERSION,
+      version: 'latest',
       initGit: true,
     };
     // Have Yeoman greet the user.
@@ -50,10 +48,10 @@ module.exports = class extends Generator {
       type: 'list',
       name: 'version',
       message: 'Tell me which version of the template files you want to use:',
-      default: `${RELEASED_VERSION}`,
+      default: 'latest',
       choices: [
-        { name: `${RELEASED_VERSION}`, value: `${RELEASED_VERSION}`, short: `${RELEASED_VERSION}` },
-        { name: 'latest', value: 'latest', short: 'latest' },
+        { name: 'Latest version (works with platform.planqk.de)', value: 'latest', short: 'latest' },
+        { name: 'Experimental (may not work as expected)', value: 'next', short: 'next' },
       ],
       store: true,
     };

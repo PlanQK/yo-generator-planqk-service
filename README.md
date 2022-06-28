@@ -32,7 +32,7 @@ npm install
 ```
 
 By using `npm link`, a global npm module is created and symlinked to you local copy. Afterwards, you'll be able to
-call `yo planqk-service` to test your changes.
+call `yo @stoneone/planqk-service <name>` to test your changes.
 
 To revert the link operation, use `npm unlink`.
 
