@@ -1,6 +1,6 @@
 {
   "name": "@stoneone/generator-planqk-service",
-  "version": "1.15.0",
+  "version": "1.16.0",
   "description": "Generator for scaffolding new PlanQK services",
   "repository": {
     "type": "git",
